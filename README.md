@@ -1,6 +1,6 @@
-# adventofcode-2018
+# adventofcode-2019
 
-These are my solutions for the Advent of Code 2018 Challenges (https://adventofcode.com/).
+These are my solutions for the Advent of Code 2019 Challenges (https://adventofcode.com/).
 
 * All of them is written with Python 2.7
 * None of the solutions require special packages, only the core Python environment
