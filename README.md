@@ -17,6 +17,8 @@ These are my solutions for the Advent of Code 2019 Challenges (https://adventofc
 * Part2, pay attention to the suggestion: calculate the extra mass for each module separately, not for the whole all at once, different results may come
 
 ## DAY 2
+* Part1, read the instructions :)
+* Part2, I rewrote to have some OOP, lets see if it is usable or not, not using any pretty exceptions or non-globals, not needed to be pretty
 
 ## DAY 3
 
