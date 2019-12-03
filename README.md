@@ -21,6 +21,8 @@ These are my solutions for the Advent of Code 2019 Challenges (https://adventofc
 * Part2, I rewrote to have some OOP, lets see if it is usable or not, not using any pretty exceptions or non-globals, not needed to be pretty
 
 ## DAY 3
+* Part1 is trivial if you know your 2D arrays
+* Part2, it is crucial to chose a lightweight data structure, as the 2D matrix is huge, takes up lots of memory. I ended up storing only the Wire1 distance, hoping it will be enough and it was. A completely new approach also popped up in my mind about converting the input data into Edges, calculating their position with coordinates, calculating their intersections pairwise, then going through the data input once more and just store the distance for these calculated intersection coordinates. This approach was not needed luckily, as it would have meant a complete rewrite.
 
 ## DAY 4
 
