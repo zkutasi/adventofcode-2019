@@ -28,6 +28,8 @@ These are my solutions for the Advent of Code 2019 Challenges (https://adventofc
 * Both was easy, for Part2, I only extended the filtering because then I could utilize Counter (as numbers do not decrease, the counts are actually the length of the groups)
 
 ## DAY 5
+* Reuse Day02's computer program, had to rewrite many things for Part1, but the OOP base was strong, so it was straightforward. Lesson learned: no need to remove code duplication now, further iterations might require it..
+* Part2 added more instructions only basically. Also read carefully, WHEN the instruction pointer has to remain, basically it changes only once for every operation, but it changes once.
 
 ## DAY 6
 
