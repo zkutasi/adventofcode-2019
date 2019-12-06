@@ -32,6 +32,8 @@ These are my solutions for the Advent of Code 2019 Challenges (https://adventofc
 * Part2 added more instructions only basically. Also read carefully, WHEN the instruction pointer has to remain, basically it changes only once for every operation, but it changes once.
 
 ## DAY 6
+* Part1, build a tree data structure with a simple recursive algorithm
+* Part2, as the example shows and one can feel it, this is a find-the-common-ancestor problem, easy if you have built the data structure
 
 ## DAY 7
 
