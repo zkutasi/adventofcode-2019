@@ -36,6 +36,8 @@ These are my solutions for the Advent of Code 2019 Challenges (https://adventofc
 * Part2, as the example shows and one can feel it, this is a find-the-common-ancestor problem, easy if you have built the data structure
 
 ## DAY 7
+* Part1 again reusing the computer program from 2 days ago, and abstracting out the IO into a class did the trick
+* Part2 required a complete overhaul of the logic and required threading, queues, and the abstraction of the computer/amp itself: I put an amp into a thread with its own memory, io and everything, and then start them all with pre-fed queue input data and wait, while at the very end the answer is in AmpE's output queue, which I just need to read out. At the end it finally just clicked together.
 
 ## DAY 8
 
