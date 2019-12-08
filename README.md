@@ -28,7 +28,7 @@ These are my solutions for the Advent of Code 2019 Challenges (https://adventofc
 * Both was easy, for Part2, I only extended the filtering because then I could utilize Counter (as numbers do not decrease, the counts are actually the length of the groups)
 
 ## DAY 5
-* Reuse Day02's computer program, had to rewrite many things for Part1, but the OOP base was strong, so it was straightforward. Lesson learned: no need to remove code duplication now, further iterations might require it..
+* Reuse Day02's computer program, had to rewrite many things for Part1, but the OOP base was strong, so it was straightforward. Lesson learned: no need to remove code duplication now, further iterations might require it.
 * Part2 added more instructions only basically. Also read carefully, WHEN the instruction pointer has to remain, basically it changes only once for every operation, but it changes once.
 
 ## DAY 6
@@ -40,6 +40,8 @@ These are my solutions for the Advent of Code 2019 Challenges (https://adventofc
 * Part2 required a complete overhaul of the logic and required threading, queues, and the abstraction of the computer/amp itself: I put an amp into a thread with its own memory, io and everything, and then start them all with pre-fed queue input data and wait, while at the very end the answer is in AmpE's output queue, which I just need to read out. At the end it finally just clicked together.
 
 ## DAY 8
+* Part1 is easy if you notice that the abount of layers has nothing to do with width or height, it is based on how many numbers you got.
+* Part2 was straightforward with a little bit of 2D array handling. Start with the back of the image (reverse the layers) to build upwards.
 
 ## DAY 9
 
