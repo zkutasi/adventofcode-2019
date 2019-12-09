@@ -44,6 +44,8 @@ These are my solutions for the Advent of Code 2019 Challenges (https://adventofc
 * Part2 was straightforward with a little bit of 2D array handling. Start with the back of the image (reverse the layers) to build upwards.
 
 ## DAY 9
+* For Part1 I reused not Day05's program, but rather Day07, as it was much better in architecture, modifying it is much easier. I lost a lot of time by a bug in the new opcode implementation, but after that it was straightforward
+* Part2 was immediate, nothing has to be changed on Part1
 
 ## DAY 10
 
