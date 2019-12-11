@@ -48,6 +48,8 @@ These are my solutions for the Advent of Code 2019 Challenges (https://adventofc
 * Part2 was immediate, nothing has to be changed on Part1
 
 ## DAY 10
+* Part1 was very tricky, as I ended up debugging a floating point rounding error and this was only happening in the 20x20 testcase, and only for 2-3 asteroids. THe issue was that python did not show the rounding errors, and kept printing out the integer-lookalike floats, and I used the is_integer() helper method, which knoew it was not integer, although it looked like one. Ended up using the classic tolerance check, but sure this was frustrating...
+* Part2 was more straightforward, I ended up using trigonometry to order to visible asteroids (calculating tangents), and redoing the visibility checks in a loop until only one asteroid was left
 
 ## DAY 11
 
