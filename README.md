@@ -48,10 +48,11 @@ These are my solutions for the Advent of Code 2019 Challenges (https://adventofc
 * Part2 was immediate, nothing has to be changed on Part1
 
 ## DAY 10
-* Part1 was very tricky, as I ended up debugging a floating point rounding error and this was only happening in the 20x20 testcase, and only for 2-3 asteroids. THe issue was that python did not show the rounding errors, and kept printing out the integer-lookalike floats, and I used the is_integer() helper method, which knoew it was not integer, although it looked like one. Ended up using the classic tolerance check, but sure this was frustrating...
-* Part2 was more straightforward, I ended up using trigonometry to order to visible asteroids (calculating tangents), and redoing the visibility checks in a loop until only one asteroid was left
+* Part1 was very tricky, as I ended up debugging a floating point rounding error and this was only happening in the 20x20 testcase, and only for 2-3 asteroids. Implemented the visibility check in two flavors: 1st is the classic y=mx+b equation in program (this is where floating point arithmetics can fool you if you look for whole numbers), the 2nd is based on similar proportions and still looking for whole numbers, but avoids floating-point multiplication. The issue with the 1st one was was that python did not show the rounding errors, and kept printing out the integer-lookalike floats (the documentation says this is intentional, while repr() shows the true float), and I used the is_integer() helper method, which knew it was not integer, although it looked like one. Ended up using the classic tolerance check, but sure this was a frustrating debugging session...
+* Part2 was more straightforward, I ended up using trigonometry to order the visible asteroids (calculating tangents), and redoing the visibility checks in a loop until only one asteroid was left
 
 ## DAY 11
+* Both Part1 and Part2 is easy enough, maybe my OOP code helps a lot. I created another IO variant for this challenge, and stored the already visited hull-parts in a map, and dynamically constructed the printout itself even for Part1. It was surprisingly easy, however for Part1, the drawing is slow, so I turned it off eventually.
 
 ## DAY 12
 
