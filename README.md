@@ -55,6 +55,8 @@ These are my solutions for the Advent of Code 2019 Challenges (https://adventofc
 * Both Part1 and Part2 is easy enough, maybe my OOP code helps a lot. I created another IO variant for this challenge, and stored the already visited hull-parts in a map, and dynamically constructed the printout itself even for Part1. It was surprisingly easy, however for Part1, the drawing is slow, so I turned it off eventually.
 
 ## DAY 12
+* Part1 is super simple
+* For Part2, I had to peek into the solutions of Reddit, and used the hint of finding the LCM of the periods of the axis returning to 0, multiplying by 2. For me this is magic now, will investigate further later.
 
 ## DAY 13
 
