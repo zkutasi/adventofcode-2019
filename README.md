@@ -59,6 +59,8 @@ These are my solutions for the Advent of Code 2019 Challenges (https://adventofc
 * For Part2, I had to peek into the solutions of Reddit, and used the hint of finding the LCM of the periods of the axis returning to 0, multiplying by 2. For me this is magic now, will investigate further later.
 
 ## DAY 13
+* Part1 is easy, implemented yet another IO class for this
+* Part2 was super fun, once I realised this is a boulder-dash simulator. I run a simulation in another computer in every read to determine where I would need to pull the joystick. If the ball is right above the paddle I do not run the simulation because that would immediatelly instruct a movement and this in 50% of the time is a wrong move just then. And finally there is some randomness in it because if not, the game became an endless loop, so since there are two perfectly valid spots to move the paddle to, I do the random-choice between them. Sometimes the play is a lose, because the randomness picks a choice and drives itself into a situation when the paddle cannot reach the destination in time, but it is possible to finish the game in a few tries.
 
 ## DAY 14
 
