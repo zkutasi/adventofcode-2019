@@ -63,6 +63,8 @@ These are my solutions for the Advent of Code 2019 Challenges (https://adventofc
 * Part2 was super fun, once I realised this is a boulder-dash simulator. I run a simulation in another computer in every read to determine where I would need to pull the joystick. If the ball is right above the paddle I do not run the simulation because that would immediatelly instruct a movement and this in 50% of the time is a wrong move just then. And finally there is some randomness in it because if not, the game became an endless loop, so since there are two perfectly valid spots to move the paddle to, I do the random-choice between them. Sometimes the play is a lose, because the randomness picks a choice and drives itself into a situation when the paddle cannot reach the destination in time, but it is possible to finish the game in a few tries.
 
 ## DAY 14
+* Part1 is easy, start from 1 FUEL, then work backwards, luckily the transformation rules are unique
+* For Part2, I first quickly set an interval of the powers of 2 where to look for the answer, and then I reduce this interval by binary search to the answer
 
 ## DAY 15
 
