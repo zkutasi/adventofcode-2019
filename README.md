@@ -67,6 +67,8 @@ These are my solutions for the Advent of Code 2019 Challenges (https://adventofc
 * For Part2, I first quickly set an interval of the powers of 2 where to look for the answer, and then I reduce this interval by binary search to the answer
 
 ## DAY 15
+* For Part1, I reused the latest IntCode program, and implemented yet another IO class. For this, I build a tree of neighboring Area tiles, and using some kind of path-finding algorithm to wander around, and backtrack if no non-visited tiles are in the neighboring list. Collecting the solutions, but there seems to be only one.
+* For Part2, simply extract the final map from the computer, and while there are empty areas, loop through the Oxygen-filled area and mark all the neighbors also with Oxygen, and count the steps required
 
 ## DAY 16
 
