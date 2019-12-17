@@ -75,6 +75,8 @@ These are my solutions for the Advent of Code 2019 Challenges (https://adventofc
 * Part2 required a completely new approach, and a few insights (that I need to peek into the Reddit posts for): 1) the offset points to the second half of the number, 2) the pattern at the second half of the number is simply just a bunch of zeroes and a bunch of ones, 3) one can calculate the new number using hint No2, and you do not even need to take the absolute-value and not even the mod2 all the time. This solution is running in 30 seconds, but there are ways to make it super-fast with more techniques. Unfortunately the first half of the number cannot be calculated like this, it remains garbage.
 
 ## DAY 17
+* Part1 is really just the warmup, again another IntCode IO class, very simple
+* Part2 was tricky. First, we need the trajectory of the robot with the turns and the number of steps, this turned out to be the simplest, luckily the path is simple and unique. Then one needs to find solutions to the problem of having A,B,C path-fragments, that could fully cover the previosuly calculated path but any of A,B,C could be reused. I ended up brute-forcing it, as the path is short and the 3 sub-paths are not that big of a problem domain, however implementing this is very tricky and I did not want to convert to String (the biggest number is less than 16, so a hexadecimal storage would have worked out well, and strings have so many cool features for this). Ended up doing so many debugging runs, but after I got a fine answer for the test-case, everything was easy, just feed the calculated data into another round of IntCode computing.
 
 ## DAY 18
 
