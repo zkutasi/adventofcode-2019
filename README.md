@@ -87,6 +87,8 @@ These are my solutions for the Advent of Code 2019 Challenges (https://adventofc
 * For Part2, I have opted a little assumption: If I chose either side of the tractorbeam, then the ship must be on it, otherwise there must be a closer point that I already checked. So I have chosen the right side of the beam, and traversed on that side all the way until I have found the first possible position of the ship. The naive approach was just not feasible here, it worked well up until 10-20, but for 100, it was too slow.
 
 ## DAY 20
+* Part1 was easy, only the parsing was a bit tricky, after that it was just a pathfinder algorithm with portal neighbors as well
+* Part2 also was relatively simple, the layering had to be implemented in all areas in the pathfinder algorithm, and was a bit tricky, but a bit of debugging led to success
 
 ## DAY 21
 
