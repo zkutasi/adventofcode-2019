@@ -83,6 +83,8 @@ These are my solutions for the Advent of Code 2019 Challenges (https://adventofc
 * Part2 was similar, but with 4 entry-points, and four possible mini-mazes.
 
 ## DAY 19
+* Part1 is very simple, just feed the 50x50 input data with the computer and calculate the number of results
+* For Part2, I have opted a little assumption: If I chose either side of the tractorbeam, then the ship must be on it, otherwise there must be a closer point that I already checked. So I have chosen the right side of the beam, and traversed on that side all the way until I have found the first possible position of the ship. The naive approach was just not feasible here, it worked well up until 10-20, but for 100, it was too slow.
 
 ## DAY 20
 
