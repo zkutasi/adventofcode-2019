@@ -79,6 +79,8 @@ These are my solutions for the Advent of Code 2019 Challenges (https://adventofc
 * Part2 was tricky. First, we need the trajectory of the robot with the turns and the number of steps, this turned out to be the simplest, luckily the path is simple and unique. Then one needs to find solutions to the problem of having A,B,C path-fragments, that could fully cover the previosuly calculated path but any of A,B,C could be reused. I ended up brute-forcing it, as the path is short and the 3 sub-paths are not that big of a problem domain, however implementing this is very tricky and I did not want to convert to String (the biggest number is less than 16, so a hexadecimal storage would have worked out well, and strings have so many cool features for this). Ended up doing so many debugging runs, but after I got a fine answer for the test-case, everything was easy, just feed the calculated data into another round of IntCode computing.
 
 ## DAY 18
+* Part1 is did a simple pathfinding algorithm, with some memoization to sepeed things up and avoid checking similar stuff. It is not the fastest for my input though... I had to pre-calculate the Point-of-view distances from every key, and store the doors a key is reachable if going from there, so I can quickly add things up if I know what keys I have.
+* Part2 was similar, but with 4 entry-points, and four possible mini-mazes.
 
 ## DAY 19
 
